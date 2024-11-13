@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech of the Future - Inovações e Tendências Tecnológicas</title>
+
+    <!-- Meta Tags de SEO -->
+    <meta name="description"
+        content="Tech of the Future é o seu portal para explorar as inovações e tendências que moldam o amanhã. Descubra os avanços em inteligência artificial, sustentabilidade, gadgets e muito mais.">
+    <meta name="keywords"
+        content="tecnologia, inovações, futuro, IA, inteligência artificial, sustentabilidade, gadgets">
+    <meta name="author" content="Tech of the Future">
+
+    <!-- Open Graph para redes sociais -->
+    <meta property="og:title" content="Tech of the Future - Inovações e Tendências Tecnológicas">
+    <meta property="og:description"
+        content="Explore o futuro da tecnologia com as últimas tendências e insights sobre inteligência artificial, sustentabilidade e inovações tecnológicas.">
+    <meta property="og:image" content="images/banner.jpg">
+    <meta property="og:url" content="https://www.techofthefuture.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card para Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tech of the Future - Inovações e Tendências Tecnológicas">
+    <meta name="twitter:description"
+        content="Descubra as inovações tecnológicas que moldam o futuro. Inteligência artificial, gadgets, sustentabilidade e muito mais.">
+    <meta name="twitter:image" content="images/banner.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        /* Estilos do navbar fixo */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            /* Garantir que o menu fique sobre os outros elementos */
+        }
+
+        /* Remover o padding do body para não haver espaço entre o navbar e o conteúdo */
+        body {
+            margin-top: 0;
+            /* Remover qualquer margem que possa estar criando o espaço */
+        }
+
+        /* Estilos para os títulos */
+        .main-title {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 2.5rem;
+            font-weight: 800;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        /* Estilos para os cards */
+        .card {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card-title,
+        .btn-primary {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        /* Estilo para o texto */
+        .section-text {
+            font-size: 1rem;
+            color: #333;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        /* Estilos do banner */
+        .banner {
+            display: flex;
+            align-items: flex-end;
+            text-align: center;
+            min-height: 600px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            margin-top: 0;
+            /* Sem margem entre o navbar fixo e o banner */
+        }
+
+        .banner-content {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="bg-dark text-white py-2 position-fixed w-100 top-0 z-index-5">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1 class="main-title fs-4">Tech of the Future</h1>
+                <nav>
+                    <a href="/" class="text-white me-3 fs-6">Início</a>
+                    <a href="#categorias" class="text-white me-3 fs-6">Categorias</a>
+                    <a href="#sobre" class="text-white me-3 fs-6">Sobre</a>
+                    <a href="#contato" class="text-white fs-6">Contato</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="banner bg-light text-center"
+        style="background-image: url('assets/images/pixabay-8.jpg'); background-size: cover; background-position: center">
+        <div class="container-fluid banner-content"
+            style="height: 100%; display: flex; flex-direction: column; justify-content: end; align-items: center; padding: 0;">
+            <h2 class="subtitle text-white">Explorando as Inovações que Moldam o Amanhã</h2>
+            <p class="lead text-white section-text">Descubra o futuro da tecnologia com as últimas tendências e
+                insights.</p>
+        </div>
+    </section>
+
+    <!-- Conteúdo em Destaque -->
+    <section class="py-5">
+        <div class="container">
+            <h3 class="section-title">Destaques</h3>
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/images/ai-cat.png" class="card-img-top" alt="Post 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Criando imagens com IA</h5>
+                            <p class="card-text section-text">Descubra como a IA está transformando o futuro.</p>
+                            <a href="pagina.html" class="btn btn-outline-primary">Ler Mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/images/hailouai.jpeg" class="card-img-top" alt="Post 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Criando vídeos com IA</h5>
+                            <p class="card-text section-text">Descubra como a IA está transformando o futuro.</p>
+                            <a href="hailouai.html" class="btn btn-outline-primary">Ler Mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adicione mais cards aqui, se necessário -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Categorias de Conteúdo -->
+    <section id="categorias" class="bg-light py-5">
+        <div class="container">
+            <h3 class="section-title">Categorias</h3>
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="#" class="btn btn-outline-dark w-100 mb-3">Inovações</a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="btn btn-outline-dark w-100 mb-3">Sustentabilidade</a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="btn btn-outline-dark w-100 mb-3">Inteligência Artificial</a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="btn btn-outline-dark w-100 mb-3">Gadgets do Futuro</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="py-5">
+        <div class="container">
+            <h3 class="section-title text-center">Sobre</h3>
+            <p class="text-center section-text">Tech of the Future é uma plataforma dedicada a explorar o futuro da
+                tecnologia, trazendo insights sobre inteligência artificial, inovação e sustentabilidade. Estamos
+                comprometidos em oferecer conteúdos relevantes para aqueles que desejam entender as mudanças que estão
+                moldando o nosso amanhã.</p>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato" class="py-5 bg-light">
+        <div class="container">
+            <h3 class="section-title text-center">Contato</h3>
+            <p class="text-center mb-4">Tem alguma dúvida ou deseja entrar em contato? Preencha o formulário abaixo.</p>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Seu nome" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Seu email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" rows="4" placeholder="Sua mensagem"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-outline-primary w-100">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Tech of the Future. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-vgP0bmF1XgVoOx8N2fgY7a2dqj6PHjXjrZL7qjFEFvKLgOcW+4UMcUJH5gQ8BguK"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
